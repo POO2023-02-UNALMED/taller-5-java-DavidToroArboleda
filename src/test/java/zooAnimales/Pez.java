@@ -15,6 +15,7 @@ public class Pez extends Animal{
 	//constructor general
 	public Pez() {
 		super();
+		listado.add(this);
 	}
 	
 	//constructor

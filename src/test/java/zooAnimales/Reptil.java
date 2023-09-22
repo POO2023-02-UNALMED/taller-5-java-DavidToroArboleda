@@ -15,6 +15,7 @@ public class Reptil extends Animal{
 	//constructor general
 	public Reptil() {
 		super();
+		listado.add(this);
 	}
 	
 	//constructor
