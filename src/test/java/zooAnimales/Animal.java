@@ -41,7 +41,7 @@ public class Animal {
 		String cadena = "Mamiferos: " + Mamifero.cantidadMamiferos()+ "\n"+
 						"Aves: " + Ave.cantidadAves() + "\n" +
 						"Reptiles: " + Reptil.cantidadReptiles() + "\n" +
-						"Peces:A " + Pez.cantidadPeces() + "\n" + 
+						"Peces: " + Pez.cantidadPeces() + "\n" + 
 						"Anfibios: " + Anfibio.cantidadAnfibios();
 		return cadena;
 	}
