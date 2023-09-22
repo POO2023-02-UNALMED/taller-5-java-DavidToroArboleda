@@ -56,7 +56,7 @@ public class Ave extends Animal {
 	
 	//cantidad aves
 	public static  int cantidadAves() {
-		return listado.size();
+		return halcones + aguilas;
 	}
 	
 	//movimiento 
