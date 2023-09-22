@@ -6,7 +6,7 @@ import gestion.Zona;
 
 public class Reptil extends Animal{
 	
-	private ArrayList <Reptil> listado = new ArrayList <Reptil>();
+	private static ArrayList <Reptil> listado = new ArrayList <Reptil>();
 	public static int iguanas;
 	public static int serpientes;
 	private String colorEscamas;
@@ -27,32 +27,32 @@ public class Reptil extends Animal{
 		}
 	
 	//crear iguana
-	public Reptil crearIguana(String nombre, int edad,  String genero ) {
+	public static Reptil crearIguana(String nombre, int edad,  String genero ) {
 		String colorEscamas = "verde";
 		String habitad = "humedal";
 		int largoCola = 3;
 		
 		
-		new Reptil(nombre, edad,habitad, genero,  colorEscamas,largoCola);
+		Reptil a =new Reptil(nombre, edad,habitad, genero,  colorEscamas,largoCola);
 		
 		iguanas++;
-		listado.add(this);
-		return this;
+		listado.add(a);
+		return a;
 		
 	}
 	
 	//crear serpiente
-	public Reptil crearSerpiente(String nombre, int edad,  String genero ) {
+	public static Reptil crearSerpiente(String nombre, int edad,  String genero ) {
 		String colorEscamas = "blanco";
 		String habitad = "jungla";
 		int largoCola = 1;
 		
 		
-		new Reptil(nombre, edad,habitad, genero,  colorEscamas,largoCola);
+		Reptil a =new Reptil(nombre, edad,habitad, genero,  colorEscamas,largoCola);
 		
 		serpientes++;
-		listado.add(this);
-		return this;
+		listado.add(a);
+		return a;
 		
 	}
 	

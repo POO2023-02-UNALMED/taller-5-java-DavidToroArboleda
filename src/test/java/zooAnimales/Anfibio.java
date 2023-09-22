@@ -6,7 +6,7 @@ import gestion.Zona;
 
 public class Anfibio extends Animal{
 	
-	private ArrayList <Anfibio> listado = new ArrayList <Anfibio>();
+	private static ArrayList <Anfibio> listado = new ArrayList <Anfibio>();
 	public static int ranas;
 	public static int salamandras;
 	private String colorPiel;
@@ -25,31 +25,31 @@ public class Anfibio extends Animal{
 		}
 	
 	//crear rana
-	public Anfibio crearRana(String nombre, int edad,  String genero) {
+	public static Anfibio crearRana(String nombre, int edad,  String genero) {
 		String colorPiel = "rojo";
 		String habitad = "selva";
 		boolean venenoso  = true;
 		
 		
-		new Anfibio(nombre, edad,habitad, genero, colorPiel, venenoso);
+		Anfibio a = new Anfibio(nombre, edad,habitad, genero, colorPiel, venenoso);
 		
 		ranas++;
-		listado.add(this);
-		return this;
+		listado.add(a);
+		return a;
 		
 	}
 	
 	//crear salamandra
-	public Anfibio crearSalamandra(String nombre, int edad,  String genero) {
+	public static Anfibio crearSalamandra(String nombre, int edad,  String genero) {
 		String colorPiel = "negro y amarillo";
 		String habitad = "selva";
 		boolean venenoso = false;
 		
 		
-		new Anfibio(nombre, edad,habitad, genero, colorPiel, venenoso);
+		Anfibio a = new Anfibio(nombre, edad,habitad, genero, colorPiel, venenoso);
 		salamandras++;
-		listado.add(this);
-		return this;
+		listado.add(a);
+		return a;
 		
 	}
 	
