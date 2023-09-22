@@ -13,10 +13,10 @@ public class Zoologico {
 	} 
 	
 	//constructor
-	public Zoologico(String nombre, String ubicacion,ArrayList <Zona> zonas) {
+	public Zoologico(String nombre, String ubicacion) {
 		this.nombre = nombre;
 		this.ubicacion = ubicacion;
-		this.zonas = zonas;
+		
 
 	}
 	
