@@ -6,7 +6,7 @@ import gestion.Zona;
 
 public class Ave extends Animal {
 	
-	private ArrayList<Ave> listado = new ArrayList <Ave>();
+	private static ArrayList<Ave> listado = new ArrayList <Ave>();
 	public static int halcones;
 	public static int aguilas; 
 	private String colorPlumas;
@@ -25,30 +25,30 @@ public class Ave extends Animal {
 		}
 	
 	//crear halcon
-	public Ave crearHalcon(String nombre, int edad,  String genero) {
+	public static Ave crearHalcon(String nombre, int edad,  String genero) {
 		String colorPlumas = "cafe glorioso";
 		String habitad = "montanas";
 		
 		
-		new Ave(nombre, edad,habitad, genero, colorPlumas);
+		Ave a = new Ave(nombre, edad,habitad, genero, colorPlumas);
 		
 		halcones++;
-		listado.add(this);
-		return this;
+		listado.add(a);
+		return a;
 		
 	}
 	
 	//crearAguila
-	public Ave crearAguila(String nombre, int edad,  String genero) {
+	public static Ave crearAguila(String nombre, int edad,  String genero) {
 		String colorPlumas = "blanco y amarillo";
 		String habitad = "montanas";
 		
 		
-		new Ave(nombre, edad,habitad, genero, colorPlumas);
+		Ave a = new Ave(nombre, edad,habitad, genero, colorPlumas);
 		
 		aguilas++;
-		listado.add(this);
-		return this;
+		listado.add(a);
+		return a;
 		
 	}
 	
