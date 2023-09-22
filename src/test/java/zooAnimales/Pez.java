@@ -7,9 +7,9 @@ import gestion.Zona;
 public class Pez extends Animal{
 	
 	private ArrayList <Pez> listado = new ArrayList <Pez>();
-	public int salmones;
-	public int bacalaos;
-	private String colorEscamas;
+	public static int salmones;
+	public static int bacalaos;
+	private static String colorEscamas;
 	private int cantidadAletas;
 	
 	//constructor general
@@ -18,20 +18,20 @@ public class Pez extends Animal{
 	}
 	
 	//constructor
-	public Pez(String nombre, int edad, String habitad , String genero, Zona zona, String colorEscamas, int cantidadAletas) {
-		super(nombre, edad, habitad, genero, zona);
+	public Pez(String nombre, int edad, String habitad , String genero, String colorEscamas, int cantidadAletas) {
+		super(nombre, edad, habitad, genero);
 		this.colorEscamas = colorEscamas;
 		this.cantidadAletas = cantidadAletas;
 		}
 	
 	//crear salmon
-	public Pez crearSalmon(String nombre, int edad,  String genero, Zona zona) {
+	public Pez crearSalmon(String nombre, int edad,  String genero) {
 		String colorEscamas = "rojo";
 		String habitad = "oceano";
 		int cantidadAletas = 6;
 		
 		
-		new Pez(nombre, edad,habitad, genero, zona, colorEscamas,cantidadAletas);
+		new Pez(nombre, edad,habitad, genero,  colorEscamas,cantidadAletas);
 		
 		salmones++;
 		listado.add(this);
@@ -40,13 +40,13 @@ public class Pez extends Animal{
 	}
 	
 	//crear bacalao
-	public Pez crearBacalao(String nombre, int edad,  String genero, Zona zona) {
+	public Pez crearBacalao(String nombre, int edad,  String genero ) {
 		String colorEscamas = "gris";
 		String habitad = "oceano";
 		int cantidadAletas = 6;
 		
 		
-		new Pez(nombre, edad,habitad, genero, zona, colorEscamas,cantidadAletas);
+		new Pez(nombre, edad,habitad, genero, colorEscamas,cantidadAletas);
 		
 		bacalaos++;
 		listado.add(this);

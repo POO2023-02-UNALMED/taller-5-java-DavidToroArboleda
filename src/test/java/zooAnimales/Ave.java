@@ -7,8 +7,8 @@ import gestion.Zona;
 public class Ave extends Animal {
 	
 	private ArrayList<Ave> listado = new ArrayList <Ave>();
-	public int halcones;
-	public int aguilas; 
+	public static int halcones;
+	public static int aguilas; 
 	private String colorPlumas;
 	
 	//constructor general
@@ -17,20 +17,20 @@ public class Ave extends Animal {
 	}
 	
 	//constructor
-	public Ave(String nombre, int edad, String habitad , String genero, Zona zona, String colorPlumas) {
-		super(nombre, edad, habitad, genero, zona);
+	public Ave(String nombre, int edad, String habitad , String genero, String colorPlumas) {
+		super(nombre, edad, habitad, genero);
 		this.colorPlumas = colorPlumas;
 		
 		
 		}
 	
 	//crear halcon
-	public Ave crearHalcon(String nombre, int edad,  String genero, Zona zona) {
+	public Ave crearHalcon(String nombre, int edad,  String genero) {
 		String colorPlumas = "cafe glorioso";
 		String habitad = "montanas";
 		
 		
-		new Ave(nombre, edad,habitad, genero, zona, colorPlumas);
+		new Ave(nombre, edad,habitad, genero, colorPlumas);
 		
 		halcones++;
 		listado.add(this);
@@ -39,12 +39,12 @@ public class Ave extends Animal {
 	}
 	
 	//crearAguila
-	public Ave crearAguila(String nombre, int edad,  String genero, Zona zona) {
+	public Ave crearAguila(String nombre, int edad,  String genero) {
 		String colorPlumas = "blanco y amarillo";
 		String habitad = "montanas";
 		
 		
-		new Ave(nombre, edad,habitad, genero, zona, colorPlumas);
+		new Ave(nombre, edad,habitad, genero, colorPlumas);
 		
 		aguilas++;
 		listado.add(this);

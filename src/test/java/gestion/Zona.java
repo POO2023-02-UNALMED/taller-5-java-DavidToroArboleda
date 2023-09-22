@@ -14,10 +14,10 @@ public class Zona {
 	} 
 	
 	//constructor
-	public Zona(String nombre, Zoologico zoo,ArrayList<Animal> animales ) {
+	public Zona(String nombre, Zoologico zoo ) {
 		this.nombre = nombre;
 		this.zoo[0] = zoo;
-		this.animales = animales;
+		
 	}
 	
 	//agregar Animales
@@ -38,8 +38,8 @@ public class Zona {
 		this.nombre = nombre;
 	}
 
-	public Zoologico[] getZoo() {
-		return zoo;
+	public Zoologico getZoo() {
+		return zoo[0];
 	}
 
 	public void setZoo(Zoologico[] zoo) {
