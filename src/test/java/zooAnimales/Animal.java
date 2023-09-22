@@ -42,9 +42,9 @@ public class Animal {
 		Pez pez = new Pez();
 		Anfibio anfibio = new Anfibio();
 		
-		String cadena = "Mamiferos: " + mamifero.cantidadMamiferos() + "\n"+
+		String cadena = "Mamiferos: " + mamifero.cantidadMamiferos()+ "\n"+
 						"Aves: " + ave.cantidadAves() + "\n" +
-						"Reptiles:" + reptil.cantidadReptiles() + "\n" +
+						"Reptiles: " + reptil.cantidadReptiles() + "\n" +
 						"Peces: " + pez.cantidadPeces() + "\n" + 
 						"Anfibios: " + anfibio.cantidadAnfibios();
 		return cadena;
