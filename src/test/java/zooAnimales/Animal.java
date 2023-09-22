@@ -35,7 +35,7 @@ public class Animal {
 	}
 	
 	//total por tipo
-	public String totalPorTipo() {
+	public static String totalPorTipo() {
 		Mamifero mamifero = new Mamifero();
 		Ave ave = new Ave();
 		Reptil reptil = new Reptil();
