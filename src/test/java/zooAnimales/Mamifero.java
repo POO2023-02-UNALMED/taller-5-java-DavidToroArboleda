@@ -27,7 +27,7 @@ public class Mamifero extends Animal{
 	
 	
 	
-	public ArrayList<Mamifero> getListado() {
+	public static ArrayList<Mamifero> getListado() {
 		return listado;
 	}
 

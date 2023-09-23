@@ -71,7 +71,7 @@ public class Reptil extends Animal{
 	
 	
 	// setters n getters
-	public ArrayList<Reptil> getListado() {
+	public static ArrayList<Reptil> getListado() {
 		return listado;
 	}
 
