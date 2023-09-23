@@ -14,7 +14,6 @@ public class Mamifero extends Animal{
 	
 	//constructor general
 	public Mamifero() {
-		super();
 		listado.add(this);
 	}
 	
