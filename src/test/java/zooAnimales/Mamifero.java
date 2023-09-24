@@ -15,7 +15,6 @@ public class Mamifero extends Animal{
 	//constructor general
 	public Mamifero() {
 		super();
-		listado.add(this);
 	}
 	
 	public Mamifero(String nombre, int edad, String habitad, String genero, boolean pelaje, int patas) {
