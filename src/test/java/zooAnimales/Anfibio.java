@@ -66,7 +66,7 @@ public class Anfibio extends Animal{
 	
 	//setters n getters
 
-	public static ArrayList<Anfibio> getListado() {
+	public ArrayList<Anfibio> getListado() {
 		return listado;
 	}
 
