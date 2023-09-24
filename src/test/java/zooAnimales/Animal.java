@@ -1,6 +1,7 @@
 package zooAnimales;
 import java.util.ArrayList;
 
+
 import gestion.Zona;
 
 public class Animal {
@@ -58,9 +59,9 @@ public class Animal {
 		
 		return "Mamiferos: "+Mamifero.getListado().size()+
 				"\nAves: "+ Ave.getListado().size()+
-		"\nReptiles: "+ Reptil.getListado().size()+
-		"\nPeces: "+ Pez.getListado().size()+
-		"\nAnfibios: "+ Anfibio.getListado().size();
+				"\nReptiles: "+ Reptil.getListado().size()+
+				"\nPeces: "+ Pez.getListado().size()+
+				"\nAnfibios: "+ Anfibio.getListado().size();
 		
 	}
 	
