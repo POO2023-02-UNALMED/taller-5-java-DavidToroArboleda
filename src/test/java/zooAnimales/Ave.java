@@ -13,6 +13,7 @@ public class Ave extends Animal {
 	
 	//constructor general
 	public Ave() {
+		super();
 		listado.add(this);
 	}
 	

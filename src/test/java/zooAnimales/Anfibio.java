@@ -14,6 +14,7 @@ public class Anfibio extends Animal{
 	
 	//constructor general
 	public Anfibio() {
+		super();
 		listado.add(this);
 	}
 	
