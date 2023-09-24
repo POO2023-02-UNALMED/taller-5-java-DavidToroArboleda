@@ -7,8 +7,8 @@ import gestion.Zona;
 public class Reptil extends Animal{
 	
 	private ArrayList <Reptil> listado = new ArrayList <Reptil>();
-	public static int iguanas;
-	public static int serpientes;
+	public int iguanas;
+	public int serpientes;
 	private String colorEscamas;
 	private int largoCola;
 
@@ -18,8 +18,8 @@ public class Reptil extends Animal{
 	}
 	
 	//constructor
-	public Reptil(String nombre, int edad, String habitad , String genero,  String colorEscamas, int largoCola) {
-		super(nombre, edad, habitad, genero);
+	public Reptil(String nombre, int edad, String habitad , String genero, Zona zona, String colorEscamas, int largoCola) {
+		super(nombre, edad, habitad, genero, zona);
 		this.colorEscamas = colorEscamas;
 		this.largoCola = largoCola;
 		
@@ -27,13 +27,13 @@ public class Reptil extends Animal{
 		}
 	
 	//crear iguana
-	public Reptil crearIguana(String nombre, int edad,  String genero ) {
+	public Reptil crearIguana(String nombre, int edad,  String genero, Zona zona) {
 		String colorEscamas = "verde";
 		String habitad = "humedal";
 		int largoCola = 3;
 		
 		
-		new Reptil(nombre, edad,habitad, genero,  colorEscamas,largoCola);
+		new Reptil(nombre, edad,habitad, genero, zona, colorEscamas,largoCola);
 		
 		iguanas++;
 		listado.add(this);
@@ -42,13 +42,13 @@ public class Reptil extends Animal{
 	}
 	
 	//crear serpiente
-	public Reptil crearSerpiente(String nombre, int edad,  String genero ) {
+	public Reptil crearSerpiente(String nombre, int edad,  String genero, Zona zona) {
 		String colorEscamas = "blanco";
 		String habitad = "jungla";
 		int largoCola = 1;
 		
 		
-		new Reptil(nombre, edad,habitad, genero,  colorEscamas,largoCola);
+		new Reptil(nombre, edad,habitad, genero, zona, colorEscamas,largoCola);
 		
 		serpientes++;
 		listado.add(this);

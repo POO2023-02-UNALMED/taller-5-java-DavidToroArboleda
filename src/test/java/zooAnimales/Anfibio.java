@@ -7,8 +7,8 @@ import gestion.Zona;
 public class Anfibio extends Animal{
 	
 	private ArrayList <Anfibio> listado = new ArrayList <Anfibio>();
-	public static int ranas;
-	public static int salamandras;
+	public int ranas;
+	public int salamandras;
 	private String colorPiel;
 	private boolean venenoso;
 	
@@ -18,20 +18,20 @@ public class Anfibio extends Animal{
 	}
 	
 	//constructor
-	public Anfibio(String nombre, int edad, String habitad , String genero, String colorPiel, boolean venenoso) {
-		super(nombre, edad, habitad, genero);
+	public Anfibio(String nombre, int edad, String habitad , String genero, Zona zona, String colorPiel, boolean venenoso) {
+		super(nombre, edad, habitad, genero, zona);
 		this.colorPiel = colorPiel;
 		this.venenoso = venenoso;
 		}
 	
 	//crear rana
-	public Anfibio crearRana(String nombre, int edad,  String genero) {
+	public Anfibio crearRana(String nombre, int edad,  String genero, Zona zona) {
 		String colorPiel = "rojo";
 		String habitad = "selva";
 		boolean venenoso  = true;
 		
 		
-		new Anfibio(nombre, edad,habitad, genero, colorPiel, venenoso);
+		new Anfibio(nombre, edad,habitad, genero, zona, colorPiel, venenoso);
 		
 		ranas++;
 		listado.add(this);
@@ -40,13 +40,13 @@ public class Anfibio extends Animal{
 	}
 	
 	//crear salamandra
-	public Anfibio crearSalamandra(String nombre, int edad,  String genero) {
+	public Anfibio crearSalamandra(String nombre, int edad,  String genero, Zona zona) {
 		String colorPiel = "negro y amarillo";
 		String habitad = "selva";
 		boolean venenoso = false;
 		
 		
-		new Anfibio(nombre, edad,habitad, genero, colorPiel, venenoso);
+		new Anfibio(nombre, edad,habitad, genero, zona, colorPiel, venenoso);
 		salamandras++;
 		listado.add(this);
 		return this;

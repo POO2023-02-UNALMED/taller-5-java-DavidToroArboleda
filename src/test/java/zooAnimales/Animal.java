@@ -9,7 +9,7 @@ public class Animal {
 	
 	private String nombre;
 	private int edad;
-	private String habitat;
+	private String habitad;
 	private String genero;
 	private Zona zona ;
 	
@@ -18,12 +18,12 @@ public class Animal {
 	} 
 	
 	//contructor
-	public Animal(String nombre,int edad,String habitad,String genero) {
+	public Animal(String nombre,int edad,String habitad,String genero,Zona zona) {
 		this.nombre = nombre;
 		this.edad = edad;
-		this.habitat = habitad;
+		this.habitad = habitad;
 		this.genero = genero;
-		
+		this.zona = zona;
 		this.totalAnimales ++;
 		
 	}
@@ -54,11 +54,11 @@ public class Animal {
 	public String toString(){
 		
 		if (zona == null) {
-			return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es " + this.genero;
+			return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitad + " y mi genero es " + this.genero;
 		}
 		
 		else {
-			return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es " + this.genero +
+			return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitad + " y mi genero es " + this.genero +
 					", la zona en la que me ubico es " + this.zona + ", en el " + zona.getZoo() ;
 		}
 		
@@ -89,13 +89,13 @@ public class Animal {
 	}
 
 
-	public String getHabitat() {
-		return habitat;
+	public String getHabitad() {
+		return habitad;
 	}
 
 
 	public void setHabitad(String habitad) {
-		this.habitat = habitad;
+		this.habitad = habitad;
 	}
 
 
@@ -127,12 +127,9 @@ public class Animal {
 	public void setZona(Zona zona) {
 		this.zona = zona;
 	}
-
+	
+	
+	
+	
 
 }
-	
-	
-	
-	
-
-
