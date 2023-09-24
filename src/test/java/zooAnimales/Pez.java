@@ -67,7 +67,7 @@ public class Pez extends Animal{
 	
 	//setters n getters
 
-	public static ArrayList<Pez> getListado() {
+	public ArrayList<Pez> getListado() {
 		return listado;
 	}
 
