@@ -23,6 +23,9 @@ public class Pez extends Animal{
 		super(nombre, edad, habitad, genero);
 		this.colorEscamas = colorEscamas;
 		this.cantidadAletas = cantidadAletas;
+		
+		listado.add(this);
+		
 		}
 	
 	//crear salmon
@@ -35,7 +38,7 @@ public class Pez extends Animal{
 		Pez a = new Pez(nombre, edad,habitad, genero,  colorEscamas,cantidadAletas);
 		
 		salmones++;
-		listado.add(a);
+		//listado.add(a);
 		return a;
 		
 	}
@@ -50,7 +53,7 @@ public class Pez extends Animal{
 		Pez a = new Pez(nombre, edad,habitad, genero, colorEscamas,cantidadAletas);
 		
 		bacalaos++;
-		listado.add(a);
+		//listado.add(a);
 		return a;
 		
 	}

@@ -22,7 +22,7 @@ public class Ave extends Animal {
 		super(nombre, edad, habitad, genero);
 		this.colorPlumas = colorPlumas;
 		
-		
+		listado.add(this);
 		}
 	
 	//crear halcon
@@ -34,7 +34,7 @@ public class Ave extends Animal {
 		Ave a = new Ave(nombre, edad,habitad, genero, colorPlumas);
 		
 		halcones++;
-		listado.add(a);
+		//listado.add(a);
 		return a;
 		
 	}
@@ -48,7 +48,7 @@ public class Ave extends Animal {
 		Ave a = new Ave(nombre, edad,habitad, genero, colorPlumas);
 		
 		aguilas++;
-		listado.add(a);
+		//listado.add(a);
 		return a;
 		
 	}

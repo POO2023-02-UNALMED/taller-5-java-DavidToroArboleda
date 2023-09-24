@@ -24,6 +24,8 @@ public class Reptil extends Animal{
 		this.colorEscamas = colorEscamas;
 		this.largoCola = largoCola;
 		
+		listado.add(this);
+		
 		
 		}
 	
@@ -37,7 +39,7 @@ public class Reptil extends Animal{
 		Reptil a =new Reptil(nombre, edad,habitad, genero,  colorEscamas,largoCola);
 		
 		iguanas++;
-		listado.add(a);
+		//listado.add(a);
 		return a;
 		
 	}
@@ -52,7 +54,7 @@ public class Reptil extends Animal{
 		Reptil a =new Reptil(nombre, edad,habitad, genero,  colorEscamas,largoCola);
 		
 		serpientes++;
-		listado.add(a);
+		//listado.add(a);
 		return a;
 		
 	}

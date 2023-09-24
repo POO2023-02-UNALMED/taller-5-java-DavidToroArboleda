@@ -23,6 +23,8 @@ public class Mamifero extends Animal{
 		this.pelaje = pelaje;
 		this.patas = patas;
 		
+		listado.add(this);
+		
 		}
 	
 	
@@ -34,7 +36,7 @@ public class Mamifero extends Animal{
 
 
 	public void setListado(ArrayList<Mamifero> listado) {
-		this.listado = listado;
+		Mamifero.listado = listado;
 	}
 
 
@@ -74,7 +76,7 @@ public class Mamifero extends Animal{
 		Mamifero a = new Mamifero(nombre, edad,habitad, genero, pelaje, patas );
 		
 		caballos++;
-		listado.add(a);
+		//listado.add(a);
 		return a;
 		
 	}
@@ -88,7 +90,7 @@ public class Mamifero extends Animal{
 		Mamifero a = new Mamifero(nombre, edad,habitad, genero, pelaje, patas );
 		
 		leones++;
-		listado.add(a);
+		//listado.add(a);
 		return a;
 		
 	}

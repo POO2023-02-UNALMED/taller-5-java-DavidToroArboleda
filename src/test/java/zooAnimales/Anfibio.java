@@ -22,6 +22,8 @@ public class Anfibio extends Animal{
 		super(nombre, edad, habitad, genero);
 		this.colorPiel = colorPiel;
 		this.venenoso = venenoso;
+		
+		listado.add(this);
 		}
 	
 	//crear rana
@@ -34,7 +36,7 @@ public class Anfibio extends Animal{
 		Anfibio a = new Anfibio(nombre, edad,habitad, genero, colorPiel, venenoso);
 		
 		ranas++;
-		listado.add(a);
+		//listado.add(a);
 		return a;
 		
 	}
