@@ -36,13 +36,17 @@ public class Animal {
 	
 	//total por tipo
 	public static String totalPorTipo() {
-	
-
-		String cadena = "Mamiferos: " + Mamifero.cantidadMamiferos()+ "\n"+
-						"Aves: " + Ave.cantidadAves() + "\n" +
-						"Reptiles: " + Reptil.cantidadReptiles() + "\n" +
-						"Peces:A " + Pez.cantidadPeces() + "\n" + 
-						"Anfibios: " + Anfibio.cantidadAnfibios();
+		Mamifero mamifero = new Mamifero();
+		Ave ave = new Ave();
+		Reptil reptil = new Reptil();
+		Pez pez = new Pez();
+		Anfibio anfibio = new Anfibio();
+		
+		String cadena = "Mamiferos: " + mamifero.cantidadMamiferos()+ "\n"+
+						"Aves: " + ave.cantidadAves() + "\n" +
+						"Reptiles: " + reptil.cantidadReptiles() + "\n" +
+						"Peces: " + pez.cantidadPeces() + "\n" + 
+						"Anfibios: " + anfibio.cantidadAnfibios();
 		return cadena;
 	}
 	
